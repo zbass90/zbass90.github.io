@@ -1,5 +1,5 @@
 ---
-title: "[개발자 블로그] Jekyll의 Chirpy테마로 깃허브 블로그 만들기"
+title: "[Blog] Jekyll의 Chirpy Theme 깃 블로그 만들기"
 date: 2022-01-04 +0800
 categories: [Blog]
 tags: [blogging, chirpy, jekyll]
