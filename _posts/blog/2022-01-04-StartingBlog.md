@@ -5,7 +5,7 @@ categories: [Blog]
 tags: [blogging, chirpy, jekyll]
 ---
 
-이 글의 베이스는 Chipy 공식 홈페이의 [**Getting Started**](https://chirpy.cotes.page/posts/getting-started/)글이며 자세한 내용은 해당 사이트에서 확인 가능합니다.<br>
+이 글의 베이스는 Chipy 공식 홈페이지의 [**Getting Started**](https://chirpy.cotes.page/posts/getting-started/)글이며 자세한 내용은 해당 사이트에서 확인 가능합니다.<br>
 [**재우님의 블로그**](https://joojaewoo.github.io/posts/startBlog/)를 참고해서 빌드와 포스팅했습니다.
 
 ### Installation

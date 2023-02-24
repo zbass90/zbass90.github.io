@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: zbass blog                          # the main title
 
-tagline: Web Developer   # it will display as the sub-title
+tagline: Web BE Developer   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Zbass Blog에 오신 걸 환영합니다 :0
