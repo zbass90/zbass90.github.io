@@ -1,9 +1,3 @@
-
----
-
-### ✅ [Algorithm] 피보나치 수열
-
-```markdown
 ---
 title: "[Algorithm] 피보나치 수열"
 date: 2022-02-08 00:00 +0900
@@ -59,3 +53,4 @@ public class Main {
     return memo[k];
   }
 }
+```

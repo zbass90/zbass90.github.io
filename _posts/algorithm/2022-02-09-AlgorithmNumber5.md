@@ -1,9 +1,3 @@
-
----
-
-### ✅ [Algorithm] 소수 (에라토스테네스의 체)
-
-```markdown
 ---
 title: "[Algorithm] 소수(에라토스테네스의 체)"
 date: 2022-02-09 00:00 +0900
@@ -61,3 +55,4 @@ public class Main {
     System.out.println(solution(n));
   }
 }
+```

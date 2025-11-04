@@ -1,9 +1,3 @@
-
----
-
-### ✅ [Algorithm] 가위 바위 보
-
-```markdown
 ---
 title: "[Algorithm] 가위 바위 보"
 date: 2022-02-03 00:00 +0900
@@ -70,3 +64,4 @@ public class Main {
     return "B";
   }
 }
+```

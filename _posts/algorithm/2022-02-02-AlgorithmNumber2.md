@@ -1,9 +1,3 @@
-
----
-
-### ✅ [Algorithm] 보이는 학생
-
-```markdown
 ---
 title: "[Algorithm] 보이는 학생"
 date: 2022-02-02 00:00 +0900
@@ -61,3 +55,4 @@ public class Main {
     System.out.println(count);
   }
 }
+```
