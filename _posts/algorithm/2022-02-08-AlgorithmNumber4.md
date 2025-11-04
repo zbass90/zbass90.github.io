@@ -1,67 +1,61 @@
+
+---
+
+### ✅ [Algorithm] 피보나치 수열
+
+```markdown
 ---
 title: "[Algorithm] 피보나치 수열"
-date: 2022-02-08 +0800
+date: 2022-02-08 00:00 +0900
 categories: [Algorithm]
 tags: [java, algorithm, number]
 ---
 
-
 ### **Question**
 
-- #### description
+#### description
+1) 피보나치 수열은 앞의 두 수를 더해 다음 수를 만드는 수열입니다.  
+2) 입력은 총 항의 수 N이며, 예를 들어 N=7이면 `1 1 2 3 5 8 13`을 출력합니다.
 
-    1) 피보나키 수열을 출력한다. 피보나치 수열이란 앞의 2개의 수를 합하여 다음 숫자가 되는 수열이다.<br>
-    2) 입력은 피보나치 수열의 총 항의 수 이다. 만약 7이 입력되면 1 1 2 3 5 8 13을 출력하면 된다.
+#### input
+첫 줄에 N(3 ≤ N ≤ 45)
 
-- #### input
-    첫 줄에 총 항수 N(3<=N<=45)이 입력된다.
+#### output
+피보나치 수열을 출력합니다.
 
-- #### output
-    첫 줄에 피보나치 수열을 출력합니다.
+---
 
+### **Example**
 
-| | 예시값 |
-| |:---:|
-| 첫번째 입력 |`10` |
-| 출력 |`1 1 2 3 5 8 13 21 34 55` |
+| 항목 | 값 |
+|:---|:---|
+| 입력 | `10` |
+| 출력 | `1 1 2 3 5 8 13 21 34 55` |
 
+---
 
 ### **Source**
 
 ```java
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-  
+import java.io.*;
+
 public class Main {
-  private static int[] memo = new int[0];
+  static int[] memo;
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int firstNum = Integer.parseInt(br.readLine());
+  public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int n = Integer.parseInt(br.readLine());
+    memo = new int[n];
+    fibo(n - 1);
 
-        memo = new int[firstNum];
-        fibo(firstNum-1);
+    for (int num : memo) System.out.print(num + " ");
+  }
 
-        StringBuffer sb = new StringBuffer();
-        for (int n : memo) {
-            sb.append(n).append(" ");
-        }
-        System.out.println(String.valueOf(sb).trim());
-
+  static int fibo(int k) {
+    if (memo[k] == 0) {
+      if (k <= 1) memo[k] = 1;
+      else memo[k] = fibo(k - 1) + fibo(k - 2);
     }
-    private static int fibo(int k) {
-        if (memo[k] == 0) { // 처음 계산되는 값
-            if (k <= 1) { // 1번 항과 2번 항은 1로 초기화
-                memo[k] = 1;
-            } else { // 3번째 항 부터는 계산
-                memo[k] = fibo(k - 1) + fibo(k - 2);
-            }
-        }
-        return memo[k];
-    }
+    return memo[k];
+  }
 }
-```
-
-### **explanation**
-재귀함수 사용 :)

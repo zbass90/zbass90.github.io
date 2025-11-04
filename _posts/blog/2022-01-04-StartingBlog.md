@@ -1,6 +1,6 @@
 ---
 title: "[Blog] Jekyll의 Chirpy Theme 깃 블로그 만들기"
-date: 2022-01-04 +0800
+date: 2022-01-04 00:00 +0900
 categories: [Blog]
 tags: [blogging, chirpy, jekyll]
 ---
